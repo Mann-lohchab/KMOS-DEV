@@ -1,38 +1,83 @@
-# sv
+# KMOS-DEV - Software Engineering Collective
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Brutalist design website for KMOS software engineering collective with portal sales page.
 
-## Creating a project
+## 🚀 Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Main Page**: KMOS company page with team, portfolio, and contact information
+- **Portal Page**: Sales page for Portal Sale with pricing and features
+- **Brutalist Design**: Bold, minimalist design with high contrast
+- **Responsive**: Mobile-first responsive design
 
-```sh
-# create a new project in the current directory
-npx sv create
+## 🛠️ Development
 
-# create a new project in my-app
-npx sv create my-app
-```
+```bash
+# Install dependencies
+npm install
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+# Start development server
 npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
+# Build for production
 npm run build
+
+# Preview production build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## 📦 Deployment to GitHub Pages
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+This project is configured for GitHub Pages deployment using GitHub Actions.
+
+### Setup Instructions:
+
+1. **Push to GitHub** (if not already done):
+   ```bash
+   git push -u origin main
+   ```
+   You may need to authenticate using:
+   - Personal Access Token (recommended)
+   - SSH key
+   - GitHub CLI
+
+2. **Enable GitHub Pages**:
+   - Go to your repository: https://github.com/Mann-lohchab/KMOS-DEV
+   - Navigate to Settings → Pages
+   - Under "Source", select "GitHub Actions"
+   - The workflow will automatically deploy on push to main branch
+
+3. **Access your site**:
+   - Your site will be available at: `https://mann-lohchab.github.io/KMOS-DEV/`
+
+### Manual Deployment:
+
+If you prefer to deploy manually:
+
+```bash
+npm run build
+# Then upload the contents of the 'build' folder to GitHub Pages
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── routes/
+│   ├── +page.svelte      # Main KMOS page
+│   ├── +layout.svelte    # Layout wrapper
+│   └── portal/
+│       └── +page.svelte  # Portal sales page
+└── lib/
+    └── lib/
+        └── utils.ts      # Utility functions
+```
+
+## 🎨 Styling
+
+- Tailwind CSS for utility-first styling
+- Custom brutalist design system
+- Dark mode support
+
+## 📝 License
+
+© 2024 KMOS. All Rights Reserved.
