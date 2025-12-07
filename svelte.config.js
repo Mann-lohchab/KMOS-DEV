@@ -13,10 +13,14 @@ const config = {
 			assets: 'build',
 			fallback: undefined,
 			precompress: false,
-			strict: true
+			strict: false
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/KMOS-DEV' : '',
+			base: process.env.GITHUB_PAGES === 'true' ? '/KMOS-DEV' : '',
+		},
+		prerender: {
+			handleMissingId: 'warn',
+			handleHttpError: 'warn'
 		}
 	}
 };

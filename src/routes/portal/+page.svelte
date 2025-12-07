@@ -107,14 +107,12 @@
 			<div class="pricing-card featured">
 				<div class="pricing-badge">BEST VALUE</div>
 				<h3 class="pricing-title">STANDARD</h3>
-				<div class="pricing-amount">$79</div>
+				<div class="pricing-amount"></div>
 				<p class="pricing-period">ONE TIME</p>
 				<ul class="pricing-features">
 					<li>EVERYTHING IN BASIC</li>
 					<li>PREMIUM FEATURES</li>
 					<li>PRIORITY SUPPORT</li>
-					<li>BONUS CONTENT</li>
-					<li>LIFETIME UPDATES</li>
 				</ul>
 				<button class="pricing-cta">CHOOSE PROFESSIONAL</button>
 			</div>
@@ -192,7 +190,7 @@
 			<div class="footer-section">
 				<h4>COMPANY</h4>
 				<ul>
-					<li><a href="/kmos">KMOS</a></li>
+					<li><a href="/">KMOS</a></li>
 					<li><a href="#about">ABOUT</a></li>
 					<li><a href="#contact">CONTACT</a></li>
 					<li><a href="#refund">REFUND POLICY</a></li>

@@ -6,7 +6,7 @@ node_modules
 .netlify
 .wrangler
 /.svelte-kit
-/build
+# /build - commented out to allow committing static HTML files
 
 # OS
 .DS_Store
